@@ -4,12 +4,18 @@ import spock.lang.Specification
 
 class CharacterSpec extends Specification {
 
-	// Feature: Character has a name
+	def character
+	
+	void setup() {
+		character = new Character('Bob', Alignment.GOOD)
+	}
+
+		// Feature: Character has a name
 	def "it should have a name as part of the constructor"() {
 		when:
-			def character = new Character('Bob')
+			def name = character.name
 		then:
-			character.name == 'Bob'
+			name == 'Bob'
 	}
 	
 	def "it should allow to set a name on a character"() {
@@ -23,7 +29,7 @@ class CharacterSpec extends Specification {
 	// Feature: Character has an alignment
 	def "it should allow me to set a Good alignment as part of the character"() {
 		when:
-			def character = new Character('Bob', Alignment.GOOD)
+			character = new Character('Bob', Alignment.GOOD)
 		then:
 			character.alignment == Alignment.GOOD
 	}
@@ -69,8 +75,9 @@ class CharacterSpec extends Specification {
 	// Feature: Armor Class & Hit Points
 	def "it should have an armor class defaulted to 10"() {
 		when:
-			def character = new Character()
+			def armorClass = character.armorClass
 		then:
-			character.armorClass == 10
+			armorClass == 10
 	}
+	
 }
