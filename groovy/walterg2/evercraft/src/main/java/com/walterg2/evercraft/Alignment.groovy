@@ -1,5 +1,5 @@
 package com.walterg2.evercraft
 
 enum Alignment {
-	GOOD
+	GOOD, NEUTRAL, EVIL
 }

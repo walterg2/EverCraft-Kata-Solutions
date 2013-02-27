@@ -21,17 +21,48 @@ class CharacterSpec extends Specification {
 	}
 	
 	// Feature: Character has an alignment
-	def "it should allow me to set an alignment as part of the character"() {
+	def "it should allow me to set a Good alignment as part of the character"() {
 		when:
-			def character = new Character('Bob', 'GOOD')
+			def character = new Character('Bob', Alignment.GOOD)
 		then:
-			character.alignment == 'GOOD'
+			character.alignment == Alignment.GOOD
 	}
-	def "it should allow me to set an alignment on a character"() {
+
+	def "it should allow me to set a Good alignment on a character"() {
 		when:
 			def character = new Character()
 			character.alignment = Alignment.GOOD
 		then:
-			character.alignment == 'GOOD'
+			character.alignment == Alignment.GOOD
+	}
+
+	def "it should allow me to set a Neutral alignment as part of the character"() {
+		when:
+			def character = new Character('Bob', Alignment.NEUTRAL)
+		then:
+			character.alignment == Alignment.NEUTRAL
+	}
+	
+	def "it should allow me to set a Neutral alignment on a character"() {
+		when:
+			def character = new Character()
+			character.alignment = Alignment.NEUTRAL
+		then:
+			character.alignment == Alignment.NEUTRAL
+	}
+	
+	def "it should allow me to set an Evil alignment as part of the character"() {
+		when:
+			def character = new Character('Bob', Alignment.EVIL)
+		then:
+			character.alignment == Alignment.EVIL
+	}
+
+	def "it should allow me to set an Evil alignment on a character"() {
+		when:
+			def character = new Character()
+			character.alignment = Alignment.EVIL
+		then:
+			character.alignment == Alignment.EVIL
 	}
 }
