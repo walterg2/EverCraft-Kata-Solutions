@@ -2,3 +2,7 @@ target
 .classpath
 .settings
 .project
+.metadata
+.lock
+.log
+.mylyn
