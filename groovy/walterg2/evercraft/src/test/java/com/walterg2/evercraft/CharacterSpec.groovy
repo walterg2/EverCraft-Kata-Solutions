@@ -65,4 +65,12 @@ class CharacterSpec extends Specification {
 		then:
 			character.alignment == Alignment.EVIL
 	}
+	
+	// Feature: Armor Class & Hit Points
+	def "it should have an armor class defaulted to 10"() {
+		when:
+			def character = new Character()
+		then:
+			character.armorClass == 10
+	}
 }
