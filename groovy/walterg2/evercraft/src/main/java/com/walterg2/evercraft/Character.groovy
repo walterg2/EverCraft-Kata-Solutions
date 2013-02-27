@@ -7,4 +7,5 @@ import groovy.transform.Canonical
 	String name
 	Alignment alignment
 	int armorClass = 10
+	int hitPoints = 5
 }

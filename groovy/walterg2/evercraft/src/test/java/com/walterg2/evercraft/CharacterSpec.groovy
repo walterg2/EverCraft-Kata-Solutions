@@ -80,4 +80,11 @@ class CharacterSpec extends Specification {
 			armorClass == 10
 	}
 	
+	def "it should have hit points defaulted to 5"() {
+		when:
+			def hitPoints = character.hitPoints
+		then:
+			hitPoints == 5
+	}
+	
 }
