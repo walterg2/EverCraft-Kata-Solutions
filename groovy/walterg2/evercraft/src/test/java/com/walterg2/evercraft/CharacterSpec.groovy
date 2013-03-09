@@ -87,35 +87,4 @@ class CharacterSpec extends Specification {
 			hitPoints == 5
 	}
 	
-	// Feature: Character Can Attack
-	def "it should allow me to successfully attack another character when die roll is 11"() {
-		given:
-			def attacker = new Character()
-			def defender = new Character()
-		when:
-			def result = attacker.attack(defender, 11)
-		then:
-			result == true
-	}
-	
-	def "it should not allow me to successfully attac another character when the die roll is 9"() {
-		given:
-		def attacker = new Character()
-		def defender = new Character()
-	when:
-		def result = attacker.attack(defender, 9)
-	then:
-		result == false
-	}
-
-	def "it should allow me to successfully attack another character when die roll is 10"() {
-		given:
-			def attacker = new Character()
-			def defender = new Character()
-		when:
-			def result = attacker.attack(defender, 10)
-		then:
-			result == true
-	}
-	
 }
