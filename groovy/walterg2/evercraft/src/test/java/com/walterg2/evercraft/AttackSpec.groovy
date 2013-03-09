@@ -41,4 +41,13 @@ class AttackSpec extends Specification {
 			result == true
 			defender.hitPoints == 4
 	}
+	
+	def "it deals double damage when the roll is a natural 20"() {
+		when:
+			def result = attacker.attack(defender, 20)
+		then:
+			result == true
+			defender.hitPoints == 3
+	}
+	
 }

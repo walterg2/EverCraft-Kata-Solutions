@@ -15,7 +15,10 @@ import groovy.transform.Canonical
 	
 	boolean dealDamage(int roll) {
 		def returnVal = false
-		if (roll >= this.armorClass) {
+		if (roll >= this.armorClass && roll == 20) {
+			hitPoints -= 1 * 2
+			returnVal = true
+		} else if (roll >= this.armorClass) {
 			hitPoints -= 1
 			returnVal = true
 		}
