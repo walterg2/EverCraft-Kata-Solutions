@@ -33,4 +33,12 @@ class AttackSpec extends Specification {
 			result == true
 	}
 	
+	// Feature: Character Can Damage
+	def "it deals one point of damage to the defender when the attack is successful"() {
+		when:
+			def result = attacker.attack(defender, 11)
+		then:
+			result == true
+			defender.hitPoints == 4
+	}
 }

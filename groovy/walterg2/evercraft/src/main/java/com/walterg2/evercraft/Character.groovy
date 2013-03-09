@@ -10,11 +10,17 @@ import groovy.transform.Canonical
 	int hitPoints = 5
 	
 	boolean attack(Character defender, int roll) {
+		defender.dealDamage(roll)
+	}
+	
+	boolean dealDamage(int roll) {
 		def returnVal = false
-		if (roll >= defender.armorClass) {
+		if (roll >= this.armorClass) {
+			hitPoints -= 1
 			returnVal = true
 		}
 		
 		returnVal
 	}
+	
 }
