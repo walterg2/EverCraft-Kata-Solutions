@@ -22,6 +22,18 @@ import groovy.transform.Canonical
 			hitPoints -= 1
 			returnVal = true
 		}
+		if (hitPoints < 0) {
+			hitPoints = 0
+		}
+		
+		returnVal
+	}
+	
+	boolean isAlive() {
+		def returnVal = true
+		if (hitPoints <= 0) {
+			returnVal = false
+		}
 		
 		returnVal
 	}

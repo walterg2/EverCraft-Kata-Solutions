@@ -50,4 +50,13 @@ class AttackSpec extends Specification {
 			defender.hitPoints == 3
 	}
 	
+	def "it should kill the defender when his hit points are 0"() {
+		when:
+			attacker.attack(defender, 20)
+			attacker.attack(defender, 20)
+			attacker.attack(defender, 20)
+		then:
+			defender.isAlive() == false
+	}
+	
 }
