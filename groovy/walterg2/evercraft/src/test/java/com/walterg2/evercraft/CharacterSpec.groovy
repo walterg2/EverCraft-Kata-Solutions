@@ -87,4 +87,10 @@ class CharacterSpec extends Specification {
 			hitPoints == 5
 	}
 	
+	def "it should have an ability of Strength defaulted to 10"() {
+		when:
+			def strength = character.abilities.STRENGTH
+		then:
+			strength == 10
+	}
 }

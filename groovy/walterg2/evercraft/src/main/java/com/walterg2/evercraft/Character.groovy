@@ -1,11 +1,14 @@
 package com.walterg2.evercraft
 
 import groovy.transform.Canonical
-
+import java.util.Map
 
 @Canonical class Character {
 	String name
 	Alignment alignment
+	Map<Ability, Integer> abilities = [
+		'STRENGTH':10
+	]
 	int armorClass = 10
 	int hitPoints = 5
 	
