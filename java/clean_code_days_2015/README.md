@@ -10,7 +10,7 @@ It was a very entertaining session, and while we got only 3/4 through [Iteration
 * +1 to Java
 * +1 attack and +2 damage when attacking with a German keyboard layout (double bonus if character is non-German)
 * Achieved Bonus Feats
-** Test Data Builder Builder
-** Eclipse Shortcut Shortcomer
+  * Test Data Builder Builder
+  * Eclipse Shortcut Shortener
 
 ![Clean Code Days 2015 Banner](http://www.cleancode-days.de/files/cleancode/theme/B_CCD_1280x480_V2.jpg)
