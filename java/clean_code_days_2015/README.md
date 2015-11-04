@@ -1,5 +1,4 @@
-## "Evercraft" Solution
-### from Coding Dojo at [Clean Code Days](http://www.cleancode-days.de/) 2015
+## "Evercraft" Solution from Coding Dojo @ [Clean Code Days](http://www.cleancode-days.de/) 2015
 
 This is the original result of the 3,5h coding dojo session at the [Clean Code Days](http://www.cleancode-days.de/) 2015.
 It was implemented in [Randori Kata style](http://codingdojo.org/cgi-bin/index.pl?RandoriKata) with Ping Pong Pairing.
